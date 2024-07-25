@@ -1,0 +1,19 @@
+DROP database If EXISTS escola;
+create database escola;
+use escola;
+create table usuario (
+id_user int not null AUTO_INCREMENT,
+nome_usuario varchar(50) not null,
+cpf varchar(11) not null,
+email varchar(64) not null,
+senha varchar(60) not null,
+admin boolean not null,
+primary key (id_user),
+unique (email)
+);
+
+insert into usuario (nome_usuario,cpf,email, senha,admin) values('Gabriel Firebase', '11122233304', 'gabriel@outlook.com', '$2y$10$cDA1.moOk5y8FiF4Oxr8lOQD4pZB90KarU3zrawNm/FFMETv7386e', TRUE);
+insert into usuario (nome_usuario,cpf,email, senha,admin) values('Danilo Commit main', '55566677708', 'danilo@hotmail.com', '$2y$10$cDA1.moOk5y8FiF4Oxr8lOQD4pZB90KarU3zrawNm/FFMETv7386e', FALSE);
+insert into usuario (nome_usuario,cpf,email, senha,admin) values('Maria Expert Div Central', '99911122203', 'maria@yahoo.com', '$2y$10$cDA1.moOk5y8FiF4Oxr8lOQD4pZB90KarU3zrawNm/FFMETv7386e', FALSE);
+insert into usuario (nome_usuario,cpf,email, senha,admin) values('Igor PhP Mago', '44455566607', 'igor@oul.com', '$2y$10$cDA1.moOk5y8FiF4Oxr8lOQD4pZB90KarU3zrawNm/FFMETv7386e', FALSE);
+insert into usuario (nome_usuario,cpf,email, senha,admin) values('Ygor Creator Tables', '44433322201', 'ygor@netscape.com', '$2y$10$cDA1.moOk5y8FiF4Oxr8lOQD4pZB90KarU3zrawNm/FFMETv7386e', FALSE);
